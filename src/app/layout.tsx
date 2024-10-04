@@ -16,7 +16,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className +''} >
+        
+        <div className="flex justify-between p-2 bg-[#30353e] ">
+          <h1 className="text-white text-3xl font-thin">ShareCode</h1>
+
+          <div className="flex justify-between  w-1/12 pe-3">
+            <h2 className="text-gray-400 hover:text-white cursor-pointer ">Login</h2>
+            <h2 className="text-gray-400 hover:text-white cursor-pointer">Signup</h2>
+          </div>
+        </div>
+
+        {children}
+        </body>
     </html>
   );
 }
