@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -7,8 +8,16 @@ export default function Home() {
       <h1 className="text-2xl font-thin text-white">An online code editor for interviews, troubleshooting, teaching & more…</h1>
 
       <div className="flex flex-col items-center gap-2 mt-10">
-        <button className="bg-[#ea1c4e] text-white px-12 py-3 rounded-lg">Share Now</button>
+        <button className="bg-[#ea1c4e] text-white px-12 py-3 rounded-lg">
+          
+          <Link href={'/editor'}> Share Now</Link></button>
         <p className="text-white font-extralight text-xs">Share code for free.</p>
+      </div>
+
+
+
+      <div className="w-[50%] mt-10 h-[50%]">
+
       </div>
   </div>
   );

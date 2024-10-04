@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className +''} >
         
-        <div className="flex justify-between p-2 bg-[#30353e] ">
+        <div className="flex justify-between p-2 bg-[#30353e] " >
           <h1 className="text-white text-3xl font-thin">ShareCode</h1>
 
           <div className="flex justify-between  w-1/12 pe-3">
